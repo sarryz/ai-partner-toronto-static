@@ -1,5 +1,5 @@
-import { Workflow, Puzzle, GraduationCap, ArrowRight, type LucideIcon } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Workflow, Puzzle, GraduationCap, type LucideIcon } from "lucide-react";
+
 
 type Service = {
   icon: LucideIcon;
@@ -73,18 +73,6 @@ export function Services() {
           ))}
         </div>
 
-        <div className="mt-14 flex justify-center">
-          <Button
-            asChild
-            size="lg"
-            className="h-12 bg-navy px-7 text-base font-semibold text-navy-foreground hover:bg-navy/90"
-          >
-            <a href="#contact" className="inline-flex items-center gap-2">
-              See How AI Fits Into Your Business
-              <ArrowRight className="h-4 w-4" />
-            </a>
-          </Button>
-        </div>
       </div>
     </section>
   );
