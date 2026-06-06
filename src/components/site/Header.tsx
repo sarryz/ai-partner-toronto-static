@@ -30,7 +30,7 @@ export function Header() {
           </span>
         </a>
         <Button asChild size="sm" className="bg-navy text-navy-foreground hover:bg-navy/90">
-          <a href="#contact">Book Free Consult</a>
+          <a href="https://calendar.app.google/WAq7LFjga1ttG34CA">Book Free Consult</a>
         </Button>
       </div>
     </header>
