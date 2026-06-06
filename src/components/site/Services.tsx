@@ -1,5 +1,5 @@
-import { Workflow, Puzzle, GraduationCap, ArrowRight, type LucideIcon } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Workflow, Puzzle, GraduationCap, type LucideIcon } from "lucide-react";
+
 
 type Service = {
   icon: LucideIcon;
