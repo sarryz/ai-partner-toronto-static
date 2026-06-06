@@ -1,12 +1,6 @@
 import { Award, Building2, MapPin, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const marks = [
-  { icon: Award, label: "MBA Credentialed" },
-  { icon: Building2, label: "Corporate Digital Transformation" },
-  { icon: MapPin, label: "Based in Toronto" },
-];
-
 export function About() {
   return (
     <section
