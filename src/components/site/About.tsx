@@ -38,19 +38,17 @@ export function About() {
 
           <div className="space-y-6 text-base leading-relaxed text-navy-foreground/80 lg:col-span-7 lg:text-lg">
             <p>
-              We believe technology should serve your business strategy, not
-              complicate it. Our team combines an MBA and corporate digital
-              transformation expertise with decades of hands-on small business
-              administration and successful AI consulting. We understand the
-              unique operational hurdles Toronto business owners face because we
-              have managed them ourselves.
+             Sarry Zheng advises businesses and government on digital transformation, 
+              AI adoption and innovation across North America. She helps organizations 
+              de-risk technological change and navigate complex digital landscape responsibly. 
+              Raised in an entrepreneurial family, she has a lifelong passion for helping small businesses succeed. 
             </p>
             <p>
-              Based right here in Toronto, we partner closely with you to ensure
-              every AI tool we introduce is intuitive, highly effective, and
-              built to scale your unique operations. We don't just hand over a
-              piece of software; we provide the personalized advisory needed to
-              ensure it actively grows your bottom line.
+             David Tobiasz is a senior business strategist with over 15 years of experience 
+              across market development, product design and operations management at SMEs and 
+              enterprise-level companies. A small business AI consultant since 2024, David is an 
+              early-adopter of AI technologies in his professional and personal life, and a first-hand 
+              advocate for AI's demonstrated capacity to empower small businesses of any size, in any sector. 
             </p>
 
             <div id="contact" className="pt-4">
