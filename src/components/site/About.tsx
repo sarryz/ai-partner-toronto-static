@@ -60,7 +60,7 @@ export function About() {
                 className="h-12 bg-navy-foreground px-7 text-base font-semibold text-navy hover:bg-navy-foreground/95"
               >
                 <a
-                  href="mailto:hello@example.com?subject=Free%20AI%20Assessment"
+                  href="https://calendar.app.google/WAq7LFjga1ttG34CA"
                   className="inline-flex items-center gap-2"
                 >
                   Book Your Free Assessment Today
