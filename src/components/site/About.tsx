@@ -1,5 +1,12 @@
-import { Award, Building2, MapPin, ArrowRight } from "lucide-react";
+import { Award, Building2, MapPin, ArrowRight, type LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+const marks: { icon: LucideIcon; label: string }[] = [
+  { icon: Award, label: "MBA" },
+  { icon: Building2, label: "Digital Transformation" },
+  { icon: MapPin, label: "Toronto, Canada" },
+];
+
 
 export function About() {
   return (
