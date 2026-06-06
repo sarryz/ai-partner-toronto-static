@@ -5,9 +5,6 @@ export function Footer() {
         <p className="md:text-left">
           © 2026 Access AI Consulting. All rights reserved.
         </p>
-        <p className="md:text-center">
-          Proudly supporting small businesses in Toronto and the GTA.
-        </p>
         <p className="md:text-right">
           Contact:{" "}
           <a
