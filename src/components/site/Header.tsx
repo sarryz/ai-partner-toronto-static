@@ -26,11 +26,11 @@ export function Header() {
             <Sparkles className="h-4 w-4" />
           </span>
           <span className="font-display text-lg font-semibold tracking-tight text-foreground">
-            [Your Business Name]
+            Access AI Consulting
           </span>
         </a>
         <Button asChild size="sm" className="bg-navy text-navy-foreground hover:bg-navy/90">
-          <a href="#contact">Book Free AI Assessment</a>
+          <a href="#contact">Book Free Consult</a>
         </Button>
       </div>
     </header>
