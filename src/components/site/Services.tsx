@@ -19,12 +19,22 @@ Following the discovery phase, we deliver a user-friendly AI roadmap complete wi
   {
     icon: Workflow,
     title: "Deploy",
-    copy: "PLACEHOLDER: We source, configure, and connect the exact AI applications that align with your specific business model, ensuring your new technology directly drives revenue and operational growth.",
+    copy: "Turnkey deployment that seamlessly integrates new AI tools into your existing operations. 
+
+You receive a targeted, high-performing tech stack, plus hands-on training and plain-language documentation to ensure smooth adoption. 
+
+The result is a suite of easy-to-use AI tools that work exactly as intended, delivering tangible benefits to your business immediately.
+",
   },
   {
     icon: Support,
     title: "Support",
-    copy: "PLACEHOLDER: We provide hands-on, accessible training to ensure your team confidently adopts your new AI tools, maximizing your return on investment from day one.",
+    copy: "We provide ongoing, turnkey support to ensure your AI solutions continue to deliver results. 
+
+You’ll have direct access to our experts for troubleshooting, while we handle essential stack maintenance and token management. 
+
+We also provide regular training and curated educational resources, serving as your dedicated AI advisors who navigate the complex evolving landscape so you can focus entirely on your business.
+",
   },
 ];
 
