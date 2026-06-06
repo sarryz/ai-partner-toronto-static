@@ -45,7 +45,7 @@ export function Hero() {
             className="h-12 bg-navy-foreground px-7 text-base font-semibold text-navy shadow-elegant transition-transform hover:scale-[1.02] hover:bg-navy-foreground/95"
             style={{ boxShadow: "var(--shadow-elegant)" }}
           >
-            <a href="#contact" className="inline-flex items-center gap-2">
+            <a href="https://calendar.app.google/WAq7LFjga1ttG34CA" className="inline-flex items-center gap-2">
               Claim Your Free 30-Minute Consult
               <ArrowRight className="h-4 w-4" />
             </a>
