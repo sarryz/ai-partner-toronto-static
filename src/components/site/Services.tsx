@@ -1,4 +1,4 @@
-import { Workflow, Puzzle, GraduationCap, type LucideIcon } from "lucide-react";
+import { Workflow, Search, LifeBuoy, type LucideIcon } from "lucide-react";
 
 
 type Service = {
@@ -9,32 +9,19 @@ type Service = {
 
 const services: Service[] = [
   {
-    icon: Insight,
+    icon: Search,
     title: "Access",
-    copy: "We work directly with you to understand the unique contours of your operations and the specific challenges your business faces. 
-
-Following the discovery phase, we deliver a user-friendly AI roadmap complete with prioritized initiatives, integration strategies, ROI analysis, and honest vendor recommendations that favour Canadian-built solutions whenever possible.
-",
+    copy: "We work directly with you to understand the unique contours of your operations and the specific challenges your business faces.\n\nFollowing the discovery phase, we deliver a user-friendly AI roadmap complete with prioritized initiatives, integration strategies, ROI analysis, and honest vendor recommendations that favour Canadian-built solutions whenever possible.",
   },
   {
     icon: Workflow,
     title: "Deploy",
-    copy: "Turnkey deployment that seamlessly integrates new AI tools into your existing operations. 
-
-You receive a targeted, high-performing tech stack, plus hands-on training and plain-language documentation to ensure smooth adoption. 
-
-The result is a suite of easy-to-use AI tools that work exactly as intended, delivering tangible benefits to your business immediately.
-",
+    copy: "Turnkey deployment that seamlessly integrates new AI tools into your existing operations.\n\nYou receive a targeted, high-performing tech stack, plus hands-on training and plain-language documentation to ensure smooth adoption.\n\nThe result is a suite of easy-to-use AI tools that work exactly as intended, delivering tangible benefits to your business immediately.",
   },
   {
-    icon: Support,
+    icon: LifeBuoy,
     title: "Support",
-    copy: "We provide ongoing, turnkey support to ensure your AI solutions continue to deliver results. 
-
-You’ll have direct access to our experts for troubleshooting, while we handle essential stack maintenance and token management. 
-
-We also provide regular training and curated educational resources, serving as your dedicated AI advisors who navigate the complex evolving landscape so you can focus entirely on your business.
-",
+    copy: "We provide ongoing, turnkey support to ensure your AI solutions continue to deliver results.\n\nYou’ll have direct access to our experts for troubleshooting, while we handle essential stack maintenance and token management.\n\nWe also provide regular training and curated educational resources, serving as your dedicated AI advisors who navigate the complex evolving landscape so you can focus entirely on your business.",
   },
 ];
 
