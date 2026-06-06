@@ -9,19 +9,22 @@ type Service = {
 
 const services: Service[] = [
   {
+    icon: Insight,
+    title: "Access",
+    copy: "We work directly with you to understand the unique contours of your operations and the specific challenges your business faces. 
+
+Following the discovery phase, we deliver a user-friendly AI roadmap complete with prioritized initiatives, integration strategies, ROI analysis, and honest vendor recommendations that favour Canadian-built solutions whenever possible.
+",
+  },
+  {
     icon: Workflow,
-    title: "Workflow & Productivity Automation",
-    copy: "We implement custom AI systems to handle your repetitive daily tasks—from automated client follow-ups to data management—giving your team hours back every day to focus on high-value work.",
+    title: "Deploy",
+    copy: "PLACEHOLDER: We source, configure, and connect the exact AI applications that align with your specific business model, ensuring your new technology directly drives revenue and operational growth.",
   },
   {
-    icon: Puzzle,
-    title: "Tailored Tool Selection & Integration",
-    copy: "We source, configure, and connect the exact AI applications that align with your specific business model, ensuring your new technology directly drives revenue and operational growth.",
-  },
-  {
-    icon: GraduationCap,
-    title: "Practical Staff Upskilling",
-    copy: "We provide hands-on, accessible training to ensure your team confidently adopts your new AI tools, maximizing your return on investment from day one.",
+    icon: Support,
+    title: "Support",
+    copy: "PLACEHOLDER: We provide hands-on, accessible training to ensure your team confidently adopts your new AI tools, maximizing your return on investment from day one.",
   },
 ];
 
@@ -41,13 +44,8 @@ export function Services() {
             id="services-heading"
             className="mt-4 font-display text-3xl font-semibold text-foreground sm:text-4xl lg:text-5xl"
           >
-            Easy, Custom AI Tools to Grow Your Business.
+           Grow your small business with accessible, impactful AI solutions
           </h2>
-          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
-            We design and deliver tailored, user-friendly AI solutions that
-            integrate seamlessly into your daily operations to maximize growth
-            and efficiency.
-          </p>
         </div>
 
         <div className="mt-16 grid gap-6 md:grid-cols-3">
