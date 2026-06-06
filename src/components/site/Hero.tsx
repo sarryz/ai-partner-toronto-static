@@ -1,0 +1,65 @@
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+export function Hero() {
+  return (
+    <section
+      id="top"
+      className="relative overflow-hidden"
+      style={{ background: "var(--gradient-hero)" }}
+    >
+      {/* Subtle grid + glow */}
+      <div
+        aria-hidden
+        className="absolute inset-0 opacity-[0.08]"
+        style={{
+          backgroundImage:
+            "linear-gradient(var(--navy-foreground) 1px, transparent 1px), linear-gradient(90deg, var(--navy-foreground) 1px, transparent 1px)",
+          backgroundSize: "56px 56px",
+          maskImage: "radial-gradient(ellipse at center, black 40%, transparent 75%)",
+        }}
+      />
+      <div
+        aria-hidden
+        className="absolute -top-40 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full opacity-30 blur-3xl"
+        style={{ background: "var(--gradient-accent)" }}
+      />
+
+      <div className="relative mx-auto max-w-5xl px-6 py-24 text-center lg:py-36 lg:px-10">
+        <span className="inline-flex items-center gap-2 rounded-full border border-navy-foreground/20 bg-navy-foreground/5 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-navy-foreground/80 backdrop-blur">
+          <span className="h-1.5 w-1.5 rounded-full bg-navy-foreground" />
+          Business Development Bank of Canada (BDC)
+        </span>
+
+        <h1 className="mx-auto mt-8 max-w-4xl font-display text-4xl font-semibold leading-[1.1] text-navy-foreground sm:text-5xl lg:text-6xl">
+          Over 50% of Canadian small businesses are already adopting AI tools to
+          outpace their competition.{" "}
+          <span className="italic text-navy-foreground/80">
+            Are you being left behind?
+          </span>
+        </h1>
+
+        <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-navy-foreground/75">
+          We make AI easy. We help Toronto small businesses deploy custom AI
+          tools that deliver immediate, measurable business outcomes—saving you
+          time, cutting overhead costs, and rapidly boosting your team's
+          productivity.
+        </p>
+
+        <div className="mt-10 flex justify-center">
+          <Button
+            asChild
+            size="lg"
+            className="h-12 bg-navy-foreground px-7 text-base font-semibold text-navy shadow-elegant transition-transform hover:scale-[1.02] hover:bg-navy-foreground/95"
+            style={{ boxShadow: "var(--shadow-elegant)" }}
+          >
+            <a href="#contact" className="inline-flex items-center gap-2">
+              Claim Your Free 30-Minute AI Assessment
+              <ArrowRight className="h-4 w-4" />
+            </a>
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
