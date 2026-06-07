@@ -41,7 +41,7 @@ export function About() {
             id="about-heading"
             className="mt-4 font-display text-3xl font-semibold leading-tight sm:text-4xl lg:text-[2.75rem]"
           >
-            A Boutique, Human Touch Backed by Proven Business Experience.
+            A boutique, human touch backed by proven business experience.
           </h2>
         </div>
 
