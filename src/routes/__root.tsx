@@ -87,8 +87,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Access AI Consulting" },
       { name: "twitter:description", content: "Grow your small business with accessible, impactful AI solutions" },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4654d76f-8eda-41da-b969-2ba9817fb73d/id-preview-783ad579--21c60d8e-662a-4c27-aa59-60bf122a3c64.lovable.app-1780786237702.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4654d76f-8eda-41da-b969-2ba9817fb73d/id-preview-783ad579--21c60d8e-662a-4c27-aa59-60bf122a3c64.lovable.app-1780786237702.png" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/585487c9-5d79-46a2-857c-4f2321f9598e/id-preview-1a46a66f--21c60d8e-662a-4c27-aa59-60bf122a3c64.lovable.app-1780796089454.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/585487c9-5d79-46a2-857c-4f2321f9598e/id-preview-1a46a66f--21c60d8e-662a-4c27-aa59-60bf122a3c64.lovable.app-1780796089454.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
