@@ -79,8 +79,7 @@ export function About() {
             </div>
           ))}
         </div>
-      </div>
-  
+
         <div id="contact" className="mt-16 flex justify-center">
           <Button
             asChild
