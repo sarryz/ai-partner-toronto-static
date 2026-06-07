@@ -12,7 +12,7 @@ const services: Service[] = [
     title: "Assess",
     paragraphs: [
       "We work directly with you to understand the unique contours of your operations and the specific challenges your business faces.",
-      "Following the discovery phase, we deliver a user-friendly AI roadmap complete with prioritized initiatives, integration strategies, ROI analysis, and honest vendor recommendations that favour Canadian-built solutions whenever possible.",
+      "Following the discovery phase, we deliver a user-friendly AI roadmap complete with prioritized initiatives, integration strategies, ROI analysis, and vendor recommendations that favour Canadian-built solutions whenever possible.",
     ],
   },
   {
@@ -20,17 +20,17 @@ const services: Service[] = [
     title: "Deploy",
     paragraphs: [
       "Turnkey deployment that seamlessly integrates new AI tools into your existing operations.",
-      "You receive a targeted, high-performing tech stack, plus hands-on training and plain-language documentation to ensure smooth adoption.",
-      "The result is a suite of easy-to-use AI tools that work exactly as intended, delivering tangible benefits to your business immediately.",
+      "You get a custom high-performance tech stack, plus hands-on training and plain-language documentation to ensure smooth adoption.",
+      "The result is a suite of easy-to-use AI tools that work exactly as intended, delivering measurable benefits to your business immediately.",
     ],
   },
   {
-    icon: LifeBuoy,
+    icon: People,
     title: "Support",
     paragraphs: [
-      "We provide ongoing, turnkey support to ensure your AI solutions continue to deliver results.",
-      "You'll have direct access to our experts for troubleshooting, while we handle essential stack maintenance and token management.",
-      "We also provide regular training and curated educational resources, serving as your dedicated AI advisors who navigate the complex evolving landscape so you can focus entirely on your business.",
+      "We provide ongoing tech support with a human touch to ensure your AI solutions continue to deliver results.",
+      "You'll have direct access to our experts for troubleshooting assistance, essential stack maintenance and routine token management.",
+      "We also provide ongoing training and curated educational resources, helping you navigate the complex evolving AI landscape so you can focus on your business.",
     ],
   },
 ];
