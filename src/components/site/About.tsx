@@ -47,13 +47,10 @@ export function About() {
 
         <div className="mt-16 grid gap-16 lg:gap-24">
           {founders.map((f) => (
-            /* CHANGED: Added sm:even:flex-row-reverse to swap image/text placement on every second card */
-            <div 
-              key={f.name} 
-              className="flex flex-col gap-6 sm:flex-row sm:even:flex-row-reverse sm:items-start sm:gap-12 lg:gap-16"
+            <div
+              key={f.name}
+              className="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-12 lg:gap-16"
             >
-              
-              {/* Image Container */}
               <div className="h-44 w-44 shrink-0 overflow-hidden rounded-full border border-navy-foreground/10 bg-navy-foreground/5">
                 <img
                   src={f.photo}
@@ -65,17 +62,15 @@ export function About() {
                 />
               </div>
 
-              {/* Text Container - CHANGED: Added text alignment that shifts depending on layout direction */}
-              <div className="flex-1 sm:even:text-right">
+              <div className="flex-1 text-left">
                 <h3 className="font-display text-xl font-semibold">{f.name}</h3>
                 <p className="mt-1 text-sm font-medium uppercase tracking-[0.14em] text-navy-foreground/60">
                   {f.title}
                 </p>
-                <p className="mt-4 text-base leading-relaxed text-navy-foreground/80 sm:even:text-left">
+                <p className="mt-4 text-base leading-relaxed text-navy-foreground/80">
                   {f.bio}
                 </p>
               </div>
-
             </div>
           ))}
         </div>
