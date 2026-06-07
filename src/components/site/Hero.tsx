@@ -27,12 +27,10 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-5xl px-6 py-24 text-center lg:py-36 lg:px-10">
 
-        <h2 className="mx-auto mt-8 max-w-4xl font-display text-4xl font-semibold leading-[1.1] text-navy-foreground sm:text-5xl lg:text-6xl">
+        <h3 className="mx-auto mt-8 max-w-4xl font-display text-4xl font-semibold leading-[1.1] text-navy-foreground sm:text-5xl lg:text-6xl">
           Over 50% of Canadian small businesses are already profiting from AI.{" "}
-          <span className="italic">
-            <br />Is yours?
+            <br>Is yours?
           </span>
-        </h2>
 
         <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-navy-foreground/75">
           Access AI Consulting helps your small business seamlessly integrate AI tools that cut costs, save time, and grow revenue.
