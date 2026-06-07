@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import sarryPhoto from "@/assets/founder-sarry1.jpg";
-import davidPhoto from "@/assets/founder-david1.jpg";
+import sarryPhoto from "@/assets/founder-sarry.jpg";
+import davidPhoto from "@/assets/founder-david.jpg";
 
 type Founder = {
   name: string;
