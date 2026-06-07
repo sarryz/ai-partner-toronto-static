@@ -45,32 +45,42 @@ export function About() {
           </h2>
         </div>
 
-        <div className="mt-16 grid gap-12 md:grid-cols-2 lg:gap-16">
+        <div className="mt-16 grid gap-16 lg:gap-24">
           {founders.map((f) => (
-            <div key={f.name} className="flex flex-col">
-              <div className="overflow-hidden rounded-2xl border border-navy-foreground/10 bg-navy-foreground/5">
+            /* CHANGED: Added sm:even:flex-row-reverse to swap image/text placement on every second card */
+            <div 
+              key={f.name} 
+              className="flex flex-col gap-6 sm:flex-row sm:even:flex-row-reverse sm:items-start sm:gap-12 lg:gap-16"
+            >
+              
+              {/* Image Container */}
+              <div className="h-44 w-44 shrink-0 overflow-hidden rounded-full border border-navy-foreground/10 bg-navy-foreground/5">
                 <img
                   src={f.photo}
                   alt={`Portrait of ${f.name}`}
-                  width={768}
-                  height={960}
+                  width={176}
+                  height={176}
                   loading="lazy"
-                  className="aspect-[4/5] w-full object-cover"
+                  className="aspect-square h-full w-full rounded-full object-cover object-top"
                 />
               </div>
-              <div className="mt-6">
+
+              {/* Text Container - CHANGED: Added text alignment that shifts depending on layout direction */}
+              <div className="flex-1 sm:even:text-right">
                 <h3 className="font-display text-xl font-semibold">{f.name}</h3>
                 <p className="mt-1 text-sm font-medium uppercase tracking-[0.14em] text-navy-foreground/60">
                   {f.title}
                 </p>
-                <p className="mt-4 text-base leading-relaxed text-navy-foreground/80">
+                <p className="mt-4 text-base leading-relaxed text-navy-foreground/80 sm:even:text-left">
                   {f.bio}
                 </p>
               </div>
+
             </div>
           ))}
         </div>
-
+      </div>
+  
         <div id="contact" className="mt-16 flex justify-center">
           <Button
             asChild
