@@ -10,18 +10,24 @@ type Service = {
 const services: Service[] = [
   {
     icon: Search,
-    title: "Access",
-    copy: "We work directly with you to understand the unique contours of your operations and the specific challenges your business faces.\n\nFollowing the discovery phase, we deliver a user-friendly AI roadmap complete with prioritized initiatives, integration strategies, ROI analysis, and honest vendor recommendations that favour Canadian-built solutions whenever possible.",
+    title: "Assess",
+    copy: "We work directly with you to understand the unique contours of your operations and the specific challenges your business faces.
+      <p>Following the discovery phase, we deliver a user-friendly AI roadmap complete with prioritized initiatives, integration strategies, 
+  ROI analysis, and honest vendor recommendations that favour Canadian-built solutions whenever possible.</p>",
   },
   {
     icon: Workflow,
     title: "Deploy",
-    copy: "Turnkey deployment that seamlessly integrates new AI tools into your existing operations.\n\nYou receive a targeted, high-performing tech stack, plus hands-on training and plain-language documentation to ensure smooth adoption.\n\nThe result is a suite of easy-to-use AI tools that work exactly as intended, delivering tangible benefits to your business immediately.",
+    copy: "Turnkey deployment that seamlessly integrates new AI tools into your existing operations.
+      <p>You receive a targeted, high-performing tech stack, plus hands-on training and plain-language documentation to ensure smooth adoption.</p>
+      <p>The result is a suite of easy-to-use AI tools that work exactly as intended, delivering tangible benefits to your business immediately. </p>",
   },
   {
-    icon: LifeBuoy,
+    icon: Training,
     title: "Support",
-    copy: "We provide ongoing, turnkey support to ensure your AI solutions continue to deliver results.\n\nYou’ll have direct access to our experts for troubleshooting, while we handle essential stack maintenance and token management.\n\nWe also provide regular training and curated educational resources, serving as your dedicated AI advisors who navigate the complex evolving landscape so you can focus entirely on your business.",
+    copy: "We provide ongoing, turnkey support to ensure your AI solutions continue to deliver results.
+      <p>You’ll have direct access to our experts for troubleshooting, while we handle essential stack maintenance and token management.</p>
+      <p> We also provide regular training and curated educational resources, serving as your dedicated AI advisors who navigate the complex evolving landscape so you can focus entirely on your business.</p>",
   },
 ];
 
