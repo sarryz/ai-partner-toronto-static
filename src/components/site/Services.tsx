@@ -1,4 +1,4 @@
-import { Workflow, Search, messages-square, type LucideIcon } from "lucide-react";
+import { Workflow, Search, MessagesSquare, type LucideIcon } from "lucide-react";
 
 type Service = {
   icon: LucideIcon;
