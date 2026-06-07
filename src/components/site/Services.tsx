@@ -25,7 +25,7 @@ const services: Service[] = [
     ],
   },
   {
-    icon: People,
+    icon: LifeBuoy,
     title: "Support",
     paragraphs: [
       "We provide ongoing tech support with a human touch to ensure your AI solutions continue to deliver results.",
