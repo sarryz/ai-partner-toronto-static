@@ -1,4 +1,4 @@
-import { Workflow, Search, LifeBuoy, type LucideIcon } from "lucide-react";
+import { Workflow, Search, messages-square, type LucideIcon } from "lucide-react";
 
 type Service = {
   icon: LucideIcon;
@@ -25,7 +25,7 @@ const services: Service[] = [
     ],
   },
   {
-    icon: LifeBuoy,
+    icon: messages-square,
     title: "Support",
     paragraphs: [
       "We provide ongoing tech support with a human touch to ensure your AI solutions continue to deliver results.",
