@@ -6,12 +6,11 @@ export function Footer() {
           © 2026 Access AI Consulting. All rights reserved.
         </p>
         <p className="md:text-right">
-          Contact:{" "}
           <a
             href="mailto:accessaiconsulting@gmail.com"
             className="text-foreground hover:text-primary"
           >
-            [Email Address]
+            Contact Us
           </a>
         </p>
       </div>
