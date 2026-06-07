@@ -88,7 +88,7 @@ export function About() {
               href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1wKustJ9EM-AV_6KJGiLf1XCjO8mgzDGK25FsrHtB8gpGSmmSuY8rRSWuS2taugH3Lnep1yPQ1?gv=true"
               className="inline-flex items-center gap-2"
             >
-              Book Your Free Assessment Today
+              Book Free Consult
               <ArrowRight className="h-4 w-4" />
             </a>
           </Button>
