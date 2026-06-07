@@ -1,33 +1,37 @@
 import { Workflow, Search, LifeBuoy, type LucideIcon } from "lucide-react";
 
-
 type Service = {
   icon: LucideIcon;
   title: string;
-  copy: string;
+  paragraphs: string[];
 };
 
 const services: Service[] = [
   {
     icon: Search,
     title: "Assess",
-    copy: "We work directly with you to understand the unique contours of your operations and the specific challenges your business faces.
-      <p>Following the discovery phase, we deliver a user-friendly AI roadmap complete with prioritized initiatives, integration strategies, 
-  ROI analysis, and honest vendor recommendations that favour Canadian-built solutions whenever possible.</p>",
+    paragraphs: [
+      "We work directly with you to understand the unique contours of your operations and the specific challenges your business faces.",
+      "Following the discovery phase, we deliver a user-friendly AI roadmap complete with prioritized initiatives, integration strategies, ROI analysis, and honest vendor recommendations that favour Canadian-built solutions whenever possible.",
+    ],
   },
   {
     icon: Workflow,
     title: "Deploy",
-    copy: "Turnkey deployment that seamlessly integrates new AI tools into your existing operations.
-      <p>You receive a targeted, high-performing tech stack, plus hands-on training and plain-language documentation to ensure smooth adoption.</p>
-      <p>The result is a suite of easy-to-use AI tools that work exactly as intended, delivering tangible benefits to your business immediately. </p>",
+    paragraphs: [
+      "Turnkey deployment that seamlessly integrates new AI tools into your existing operations.",
+      "You receive a targeted, high-performing tech stack, plus hands-on training and plain-language documentation to ensure smooth adoption.",
+      "The result is a suite of easy-to-use AI tools that work exactly as intended, delivering tangible benefits to your business immediately.",
+    ],
   },
   {
-    icon: Training,
+    icon: LifeBuoy,
     title: "Support",
-    copy: "We provide ongoing, turnkey support to ensure your AI solutions continue to deliver results.
-      <p>You’ll have direct access to our experts for troubleshooting, while we handle essential stack maintenance and token management.</p>
-      <p> We also provide regular training and curated educational resources, serving as your dedicated AI advisors who navigate the complex evolving landscape so you can focus entirely on your business.</p>",
+    paragraphs: [
+      "We provide ongoing, turnkey support to ensure your AI solutions continue to deliver results.",
+      "You'll have direct access to our experts for troubleshooting, while we handle essential stack maintenance and token management.",
+      "We also provide regular training and curated educational resources, serving as your dedicated AI advisors who navigate the complex evolving landscape so you can focus entirely on your business.",
+    ],
   },
 ];
 
@@ -47,12 +51,12 @@ export function Services() {
             id="services-heading"
             className="mt-4 font-display text-3xl font-semibold text-foreground sm:text-4xl lg:text-5xl"
           >
-           Grow your small business with accessible, impactful AI solutions
+            Grow your small business with accessible, impactful AI solutions
           </h2>
         </div>
 
         <div className="mt-16 grid gap-6 md:grid-cols-3">
-          {services.map(({ icon: Icon, title, copy }, i) => (
+          {services.map(({ icon: Icon, title, paragraphs }, i) => (
             <article
               key={title}
               className="group relative flex flex-col rounded-2xl border border-border bg-card p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30"
@@ -67,13 +71,14 @@ export function Services() {
               <h3 className="font-display text-xl font-semibold text-foreground">
                 {title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                {copy}
-              </p>
+              <div className="mt-3 space-y-3 text-sm leading-relaxed text-muted-foreground">
+                {paragraphs.map((p, idx) => (
+                  <p key={idx}>{p}</p>
+                ))}
+              </div>
             </article>
           ))}
         </div>
-
       </div>
     </section>
   );
