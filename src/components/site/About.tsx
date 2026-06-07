@@ -1,7 +1,10 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import sarryPhoto from "@/assets/founder-sarry.jpg";
-import davidPhoto from "@/assets/founder-david.jpg";
+import sarryAsset from "@/assets/founder-sarry.webp.asset.json";
+import davidAsset from "@/assets/founder-david.webp.asset.json";
+
+const sarryPhoto = sarryAsset.url;
+const davidPhoto = davidAsset.url;
 
 type Founder = {
   name: string;
