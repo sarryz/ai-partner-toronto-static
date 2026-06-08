@@ -7,7 +7,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # This is required!
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -15,8 +15,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Install and Build
+      - name: Clean Install and Build
         run: |
+          rm -rf node_modules
           npm install --legacy-peer-deps
           npm run build
       - name: Deploy
