@@ -44,7 +44,7 @@ export function Services() {
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="text-base font-bold uppercase tracking-[0.18em] text-primary">
+          <span className="text-3xl font-bold uppercase tracking-[0.18em] text-primary">
             What we do
           </span>
           <h2
