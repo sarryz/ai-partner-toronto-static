@@ -37,7 +37,7 @@ export function About() {
     >
       <div className="mx-auto max-w-6xl px-6 lg:px-10">
         <div className="max-w-3xl">
-          <span className="text-base font-bold uppercase tracking-[0.18em] text-navy-foreground/60">
+          <span className="text-3xl font-bold uppercase tracking-[0.18em] text-navy-foreground/60">
             Who we are
           </span>
           <h2
