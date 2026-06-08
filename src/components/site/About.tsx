@@ -18,7 +18,7 @@ const founders: Founder[] = [
     name: "Sarry Zheng",
     title: "Co-Founder",
     photo: sarryPhoto,
-    bio: "Sarry Zheng advises businesses and government on digital transformation, AI adoption and innovation across North America. She helps organizations de-risk technological change and navigate the complex digital landscape responsibly. Raised in an entrepreneurial family, she has a lifelong passion for helping small businesses succeed.",
+    bio: "Sarry Zheng advises businesses and government on digital transformation, AI adoption and innovation across North America. With an MBA and a background in science, she helps organizations de-risk technological change and navigate the complex digital landscape responsibly. Raised in an entrepreneurial family, she has a lifelong passion for helping small businesses succeed.",
   },
   {
     name: "David Tobiasz",
