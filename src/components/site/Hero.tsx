@@ -27,11 +27,10 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-5xl px-6 py-24 text-center lg:py-36 lg:px-10">
 
-      <h3 className="mx-auto mt-8 max-w-4xl font-display text-4xl font-semibold leading-[1.1] text-navy-foreground sm:text-5xl lg:text-6xl">
+<h3 className="mx-auto mt-8 max-w-4xl font-display text-4xl font-semibold leading-[1.1] text-navy-foreground sm:text-5xl lg:text-6xl">
   Over 50% of Canadian small businesses are already profiting from AI.{" "}
-  <span className="relative inline-block text-teal-300 white-space-nowrap drop-shadow-sm">
+  <span className="font-serif italic font-normal text-amber-200/90 tracking-wide block sm:inline mt-2 sm:mt-0">
     Is yours?
-    <span className="absolute bottom-0 left-0 h-[4px] w-full rounded-full bg-gradient-to-r from-teal-400 to-emerald-400 opacity-80" />
   </span>
 </h3>
 
