@@ -29,7 +29,7 @@ export function Hero() {
 
 <h3 className="mx-auto mt-8 max-w-4xl font-display text-4xl font-semibold leading-[1.1] text-navy-foreground sm:text-5xl lg:text-6xl">
   Over 50% of Canadian small businesses are already profiting from AI.{" "}
-  <span className="font-serif italic font-normal text-amber-200/90 tracking-wide block sm:inline mt-2 sm:mt-0">
+  <span className="italic font-normal text-amber-200/90 tracking-wide block sm:inline mt-2 sm:mt-0">
     Is yours?
   </span>
 </h3>
