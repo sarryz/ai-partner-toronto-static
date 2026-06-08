@@ -30,7 +30,7 @@ const services: Service[] = [
     paragraphs: [
       "Ongoing tech support with a human touch to ensure your AI solutions continue to deliver results.",
       "You'll have direct access to our experts for troubleshooting assistance, essential stack maintenance and routine token management.",
-      "We also provide follow-up training sessions and curated educational resources, keeping you up-to-date with the rapidly evolving AI landscape so you can focus on your business.",
+      "We also provide follow-up training sessions and curated educational resources, distilling the rapidly evolving AI landscape into actionable briefs so you can focus on your business.",
     ],
   },
 ];
@@ -44,7 +44,7 @@ export function Services() {
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="text-sm font-bold uppercase tracking-[0.18em] text-primary">
+          <span className="text-base font-bold uppercase tracking-[0.18em] text-primary">
             What we do
           </span>
           <h2
