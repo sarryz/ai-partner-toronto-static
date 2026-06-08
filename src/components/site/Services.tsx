@@ -11,15 +11,15 @@ const services: Service[] = [
     icon: Search,
     title: "Assess",
     paragraphs: [
-      "We work directly with you to understand the unique contours of your operations and the specific challenges your business faces.",
-      "Following the discovery phase, we deliver a user-friendly AI roadmap complete with prioritized initiatives, integration strategies, ROI analysis, and vendor recommendations that favour Canadian-built solutions whenever possible.",
+      "We work directly with you to understand the unique contours of your business and identify high-impact opportunities for AI integration.",
+      "We then deliver a user-friendly AI roadmap complete with prioritized initiatives, integration strategies, ROI analysis, and vendor recommendations that favour Canadian-built solutions whenever possible.",
     ],
   },
   {
     icon: Workflow,
     title: "Deploy",
     paragraphs: [
-      "Turnkey deployment that seamlessly integrates new AI tools into your existing operations.",
+      "Turnkey deployment that seamlessly integrates AI tools into your existing operations.",
       "You get a custom high-performance tech stack, plus hands-on training and plain-language documentation to ensure smooth adoption.",
       "The result is a suite of easy-to-use AI tools that work exactly as intended, delivering measurable benefits to your business immediately.",
     ],
@@ -28,9 +28,9 @@ const services: Service[] = [
     icon: MessagesSquare,
     title: "Support",
     paragraphs: [
-      "We provide ongoing tech support with a human touch to ensure your AI solutions continue to deliver results.",
+      "Ongoing tech support with a human touch to ensure your AI solutions continue to deliver results.",
       "You'll have direct access to our experts for troubleshooting assistance, essential stack maintenance and routine token management.",
-      "We also provide ongoing training and curated educational resources, helping you navigate the complex evolving AI landscape so you can focus on your business.",
+      "We also provide follow-up training sessions and curated educational resources, keeping you up-to-date with the rapidly evolving AI landscape so you can focus on your business.",
     ],
   },
 ];
@@ -44,7 +44,7 @@ export function Services() {
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+          <span className="text-sm font-bold uppercase tracking-[0.18em] text-primary">
             What we do
           </span>
           <h2
