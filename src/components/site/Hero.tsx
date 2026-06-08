@@ -28,9 +28,9 @@ export function Hero() {
       <div className="relative mx-auto max-w-5xl px-6 py-24 text-center lg:py-36 lg:px-10">
 
 <h3 className="mx-auto mt-8 max-w-4xl font-display text-4xl font-semibold leading-[1.1] text-navy-foreground sm:text-5xl lg:text-6xl">
-  Over 50% of Canadian small businesses are already profiting from AI.{" "}
-  <span className="font-semibold italic font-normal text-amber-200/90 tracking-wide block sm:inline mt-2 sm:mt-0">
-    Is yours?
+  50% of Canadian small businesses already profit from AI.{" "}
+  <span className="font-semibold font-normal text-amber-200/90 tracking-wide block sm:inline mt-2 sm:mt-0">
+    Does yours?
   </span>
 </h3>
 
