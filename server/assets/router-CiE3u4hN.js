@@ -2,7 +2,7 @@ import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { createRootRouteWithContext, useRouter, Link, Outlet, HeadContent, Scripts, createFileRoute, lazyRouteComponent, createRouter } from "@tanstack/react-router";
 import { jsx, jsxs } from "react/jsx-runtime";
 import { useEffect } from "react";
-const appCss = "/ai-partner-toronto/assets/styles-nhsDj2xi.css";
+const appCss = "./assets/styles-nhsDj2xi.css";
 function reportLovableError(error, context = {}) {
   if (typeof window === "undefined") return;
   window.__lovableEvents?.captureException?.(
