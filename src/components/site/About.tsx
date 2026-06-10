@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import sarryAsset from "@/founder-sarry.webp";
-import davidAsset from "@/founder-david.webp";
+import sarryAsset from "@/assets/founder-sarry.webp.asset.json";
+import davidAsset from "@/assets/founder-david.webp.asset.json";
 
 const sarryPhoto = sarryAsset.url;
 const davidPhoto = davidAsset.url;
