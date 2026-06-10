@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Access AI Consulting" },
+      { title: "AI Consulting for Small Businesses" },
       { name: "description", content: "Grow your small business with accessible, impactful AI solutions" },
       { name: "author", content: "Lovable" },
       { property: "og:title", content: "Access AI Consulting" },
