@@ -71,15 +71,15 @@ const Route$1 = createRootRouteWithContext()({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Access AI Consulting" },
+      { title: "AI Consulting for Small Businesses" },
       { name: "description", content: "Grow your small business with accessible, impactful AI solutions" },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Access AI Consulting" },
+      { property: "og:title", content: "AI Consulting for Small Businesses" },
       { property: "og:description", content: "Grow your small business with accessible, impactful AI solutions" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Access AI Consulting" },
+      { name: "twitter:title", content: "AI Consulting for Small Businesses" },
       { name: "twitter:description", content: "Grow your small business with accessible, impactful AI solutions" },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/48fb2929-03a8-43d9-b074-16136183701f/id-preview-24b21824--21c60d8e-662a-4c27-aa59-60bf122a3c64.lovable.app-1780797406559.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/48fb2929-03a8-43d9-b074-16136183701f/id-preview-24b21824--21c60d8e-662a-4c27-aa59-60bf122a3c64.lovable.app-1780797406559.png" }
@@ -113,7 +113,7 @@ function RootComponent() {
   return /* @__PURE__ */ jsx(QueryClientProvider, { client: queryClient, children: /* @__PURE__ */ jsx(Outlet, {}) });
 }
 const $$splitComponentImporter = () => import("./index-Cwr7vgLC.js");
-const TITLE = "Custom AI Tools for Toronto Small Businesses";
+const TITLE = "AI Consulting for Small Businesses";
 const DESCRIPTION = "We help Toronto small businesses deploy custom AI tools that save time, cut costs, and boost team productivity. Book a free 30-minute AI assessment.";
 const Route = createFileRoute("/")({
   head: () => ({
