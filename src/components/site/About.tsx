@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import sarryAsset from "@/assets/founder-sarry.webp.asset.json";
 import davidAsset from "@/assets/founder-david.webp.asset.json";
@@ -11,6 +11,7 @@ type Founder = {
   title: string;
   photo: string;
   bio: string;
+  linkedin: string;
 };
 
 const founders: Founder[] = [
@@ -18,12 +19,14 @@ const founders: Founder[] = [
     name: "Sarry Zheng",
     title: "Co-Founder",
     photo: sarryPhoto,
+    linkedin: "https://www.linkedin.com/in/sarryzheng/",
     bio: "Sarry Zheng advises businesses and government on digital transformation, AI adoption and innovation across North America. With an MBA and a background in science, she helps organizations de-risk technological change and navigate the complex digital landscape responsibly. Raised in an entrepreneurial family, she has a lifelong passion for helping small businesses succeed.",
   },
   {
     name: "David Tobiasz",
     title: "Co-Founder",
     photo: davidPhoto,
+    linkedin: "https://www.linkedin.com/in/davidtobiasz/",
     bio: "David Tobiasz is a senior business strategist with over 15 years of experience across market development, product design and operations management at SMEs and enterprise-level companies. A small business AI consultant since 2024, David is an early-adopter of AI technologies in his professional and personal life, and a first-hand advocate for AI's demonstrated capacity to empower small businesses of any size, in any sector.",
   },
 ];
@@ -70,6 +73,15 @@ export function About() {
                 <p className="mt-1 text-sm font-medium uppercase tracking-[0.14em] text-navy-foreground/60">
                   {f.title}
                 </p>
+                <a
+                  href={f.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${f.name} on LinkedIn`}
+                  className="mt-3 inline-flex h-8 w-8 items-center justify-center rounded-full border border-navy-foreground/20 text-navy-foreground/80 transition-colors hover:bg-navy-foreground hover:text-navy"
+                >
+                  <Linkedin className="h-4 w-4" />
+                </a>
                 <p className="mt-4 text-base leading-relaxed text-navy-foreground/80">
                   {f.bio}
                 </p>
