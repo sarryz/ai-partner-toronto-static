@@ -47,7 +47,7 @@ All CTAs scroll-anchor to a `#contact` section (or open mailto for MVP); easy to
 
 ### SEO
 
-- Title (<60 chars): "Custom AI Tools for Toronto Small Businesses"
+- Title (<60 chars): "AI Consulting for Small Businesses"
 - Meta description (<160 chars): value-prop sentence.
 - Semantic HTML: `<header>`, `<main>`, `<section>` with `aria-labelledby`, `<footer>`. Single `<h1>` in Hero; `<h2>` per section.
 - Responsive viewport already configured in root.
