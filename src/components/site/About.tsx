@@ -19,14 +19,14 @@ const founders: Founder[] = [
     name: "Sarry Zheng",
     title: "Co-Founder",
     photo: sarryPhoto,
-    linkedin: "https://www.linkedin.com/in/sarryzheng/",
+    linkedin: "https://www.linkedin.com/in/sarryz/",
     bio: "Sarry Zheng advises businesses and government on digital transformation, AI adoption and innovation across North America. With an MBA and a background in science, she helps organizations de-risk technological change and navigate the complex digital landscape responsibly. Raised in an entrepreneurial family, she has a lifelong passion for helping small businesses succeed.",
   },
   {
     name: "David Tobiasz",
     title: "Co-Founder",
     photo: davidPhoto,
-    linkedin: "https://www.linkedin.com/in/davidtobiasz/",
+    linkedin: "https://www.linkedin.com/in/david-tobiasz/",
     bio: "David Tobiasz is a senior business strategist with over 15 years of experience across market development, product design and operations management at SMEs and enterprise-level companies. A small business AI consultant since 2024, David is an early-adopter of AI technologies in his professional and personal life, and a first-hand advocate for AI's demonstrated capacity to empower small businesses of any size, in any sector.",
   },
 ];
