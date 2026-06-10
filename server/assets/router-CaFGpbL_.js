@@ -112,7 +112,7 @@ function RootComponent() {
   const { queryClient } = Route$1.useRouteContext();
   return /* @__PURE__ */ jsx(QueryClientProvider, { client: queryClient, children: /* @__PURE__ */ jsx(Outlet, {}) });
 }
-const $$splitComponentImporter = () => import("./index-DuYbXr1G.js");
+const $$splitComponentImporter = () => import("./index-CamBsG5w.js");
 const TITLE = "AI Consulting for Small Businesses";
 const DESCRIPTION = "We help Toronto small businesses deploy custom AI tools that save time, cut costs, and boost team productivity. Book a free 30-minute AI assessment.";
 const Route = createFileRoute("/")({
