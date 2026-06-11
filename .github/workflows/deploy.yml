@@ -8,8 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,40 +23,16 @@ jobs:
           npm install --legacy-peer-deps
           npm run build
 
-      - name: Assemble Public Files
+      - name: Configure Static Routing Fallbacks
         run: |
-          # 1. Create a clean folder structure for GitHub Pages
-          mkdir -p final-deploy
+          # 1. Create a 404 page copy to handle browser refreshing cleanly
+          cp dist/index.html dist/404.html
           
-          # 2. Copy the styling files and built script chunks into the target directory
-          cp -r dist/client/* final-deploy/
-          
-          # 3. Create a custom HTML template to load the TanStack bundle elements
-          cat << 'EOF' > final-deploy/index.html
-          <!DOCTYPE html>
-          <html lang="en">
-            <head>
-              <meta charset="UTF-8" />
-              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-              <title>AI Partner Toronto</title>
-              <link rel="stylesheet" href="./assets/styles-BC36syyE.css">
-              <script type="module" src="./assets/index-DO6-uGQx.js"></script>
-              <script type="module" src="./assets/index-DD7J-GEE.js"></script>
-            </head>
-            <body>
-              <div id="root"></div>
-            </body>
-          </html>
-          EOF
-          
-          # 4. Save a duplicate to 404.html to secure route updates
-          cp final-deploy/index.html final-deploy/404.html
-          
-          # 5. Tell Jekyll to stay disabled
-          touch final-deploy/.nojekyll
+          # 2. Prevent GitHub from blocking asset folders
+          touch dist/.nojekyll
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: final-deploy
+          publish_dir: dist
