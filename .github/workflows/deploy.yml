@@ -24,6 +24,7 @@ jobs:
           rm -rf node_modules
           npm install --legacy-peer-deps
           npm run build
+          cp dist/client/index.html dist/client/404.html  # Creates the routing fallback automatically
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
