@@ -7,13 +7,18 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
-    // This tells Vite that your assets are hosted in the /ai-partner-toronto/ folder
   vite: {
+    // Keep your base setting so assets load from your specific sub-folder
     base: "./",
+    // Force the Nitro engine to create flat, static files for GitHub
+    nitro: {
+      preset: "github-pages",
+      prerender: {
+        routes: ["/"],
+      },
+    },
   },
   tanstackStart: {
-    // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
     server: { entry: "server" },
   },
 });
