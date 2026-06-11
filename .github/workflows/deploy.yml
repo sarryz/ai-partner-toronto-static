@@ -24,10 +24,41 @@ jobs:
           rm -rf node_modules
           npm install --legacy-peer-deps
           npm run build
-          cp dist/client/index.html dist/client/404.html  # Creates the routing fallback automatically
+
+      - name: Build and Assemble HTML Layout
+        run: |
+          # 1. Create a clean folder space for the website files
+          mkdir -p final-deploy
+          
+          # 2. Copy the styling sheets and script bundles over 
+          cp -r dist/client/* final-deploy/
+          
+          # 3. Inject a fresh, physical root index.html container
+          cat << 'EOF' > final-deploy/index.html
+          <!DOCTYPE html>
+          <html lang="en">
+            <head>
+              <meta charset="UTF-8" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+              <title>AI Partner Toronto</title>
+              <link rel="stylesheet" href="./assets/styles-BC36syyE.css">
+              <script type="module" src="./assets/index-DO6-uGQx.js"></script>
+              <script type="module" src="./assets/index-DD7J-GEE.js"></script>
+            </head>
+            <body>
+              <div id="root"></div>
+            </body>
+          </html>
+          EOF
+          
+          # 4. Copy it to 404.html to stop GitHub Pages route errors
+          cp final-deploy/index.html final-deploy/404.html
+          
+          # 5. Stop the GitHub Jekyll engine from blocking asset paths
+          touch final-deploy/.nojekyll
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist/client  # Directs GitHub to the exact client asset folder
+          publish_dir: final-deploy
