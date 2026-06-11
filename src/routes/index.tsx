@@ -7,7 +7,7 @@ import { Footer } from "@/components/site/Footer";
 
 const TITLE = "AI Consulting for Small Businesses";
 const DESCRIPTION =
-  "We help Toronto small businesses deploy custom AI tools that save time, cut costs, and boost team productivity. Book a free 30-minute AI assessment.";
+  "We help Toronto small businesses deploy personalized AI tools that save time, cut costs, and boost team productivity. Book a free 30-minute AI assessment.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
