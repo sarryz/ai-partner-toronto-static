@@ -14,7 +14,8 @@ export default defineConfig({
     nitro: {
       preset: "github-pages",
       prerender: {
-        routes: ["/"],
+        // Pre-render both root and subdirectory paths
+        routes: ["/", "/ai-partner-toronto-static/"],
       },
     },
   },
