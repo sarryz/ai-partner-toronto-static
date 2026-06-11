@@ -1,0 +1,101 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-navy: var(--navy);
+  --color-navy-foreground: var(--navy-foreground);
+  --color-navy-muted: var(--navy-muted);
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.625rem;
+
+  /* Navy Trust palette in oklch */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.22 0.05 260);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.22 0.05 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.22 0.05 260);
+
+  /* Primary = accent blue #3b6fa0 */
+  --primary: oklch(0.55 0.10 250);
+  --primary-foreground: oklch(0.98 0.005 250);
+
+  --secondary: oklch(0.96 0.01 250);
+  --secondary-foreground: oklch(0.25 0.06 260);
+
+  --muted: oklch(0.96 0.01 250);
+  --muted-foreground: oklch(0.50 0.03 255);
+
+  --accent: oklch(0.55 0.10 250);
+  --accent-foreground: oklch(0.98 0.005 250);
+
+  --destructive: oklch(0.58 0.22 27);
+  --destructive-foreground: oklch(0.98 0.005 250);
+
+  --border: oklch(0.91 0.015 250);
+  --input: oklch(0.91 0.015 250);
+  --ring: oklch(0.55 0.10 250);
+
+  /* Deep navy section background #0f1b3d */
+  --navy: oklch(0.21 0.07 265);
+  --navy-muted: oklch(0.28 0.07 263);
+  --navy-foreground: oklch(0.96 0.01 250);
+
+  --gradient-hero: linear-gradient(135deg, oklch(0.21 0.07 265) 0%, oklch(0.28 0.08 263) 60%, oklch(0.35 0.09 255) 100%);
+  --gradient-accent: linear-gradient(90deg, oklch(0.55 0.10 250), oklch(0.62 0.11 245));
+  --shadow-elegant: 0 20px 50px -20px oklch(0.21 0.07 265 / 0.35);
+  --shadow-card: 0 4px 20px -8px oklch(0.21 0.07 265 / 0.15);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
