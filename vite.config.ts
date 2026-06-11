@@ -9,7 +9,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   vite: {
     // Keep your base setting so assets load from your specific sub-folder
-    base: "./ai-partner-toronto-static",
+    base: "./ai-partner-toronto-static/",
     build: {
         // Force the output directly to a clean dist directory
         outDir: "dist",
