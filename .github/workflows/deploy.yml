@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+env:
+      # Clear the deprecation warning by upgrading the action environment
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -15,7 +18,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24' # Upgraded from 20 to clear warnings
 
       - name: Clean Install and Build
         run: |
@@ -23,8 +26,8 @@ jobs:
           npm install --legacy-peer-deps
           npm run build
 
-      - name: Deploy
+  - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .output/public  # This is the crucial fix
+          publish_dir: .output/public
