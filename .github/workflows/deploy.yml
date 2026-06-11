@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-env:
+    env:
       # Clear the deprecation warning by upgrading the action environment
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
     steps:
