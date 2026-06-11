@@ -9,17 +9,13 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   vite: {
     // Keep your base setting so assets load from your specific sub-folder
-    base: "./",
-    // Force the Nitro engine to create flat, static files for GitHub
-    nitro: {
-      preset: "github-pages",
-      prerender: {
-        // Pre-render both root and subdirectory paths
-        routes: ["/", "/ai-partner-toronto-static/"],
-      },
+    base: "./ai-partner-toronto-static",
+    build: {
+        // Force the output directly to a clean dist directory
+        outDir: "dist",
+      }
     },
-  },
-  tanstackStart: {
-    server: { entry: "server" },
-  },
-});
+    tanstackStart: {
+      server: { entry: "server" },
+    },
+  });
