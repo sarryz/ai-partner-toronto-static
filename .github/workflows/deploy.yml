@@ -25,16 +25,40 @@ jobs:
           npm install --legacy-peer-deps
           npm run build
 
-      - name: Handle Routing Fallbacks
+      - name: Assemble Public Files
         run: |
-          # 1. Create a 404 fallback from the native index file to fix refreshing issues
-          cp dist/client/index.html dist/client/404.html
+          # 1. Create a clean folder structure for GitHub Pages
+          mkdir -p final-deploy
           
-          # 2. Add the .nojekyll flag so GitHub doesn't block asset folders
-          touch dist/client/.nojekyll
+          # 2. Copy the styling files and built script chunks into the target directory
+          cp -r dist/client/* final-deploy/
+          
+          # 3. Create a custom HTML template to load the TanStack bundle elements
+          cat << 'EOF' > final-deploy/index.html
+          <!DOCTYPE html>
+          <html lang="en">
+            <head>
+              <meta charset="UTF-8" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+              <title>AI Partner Toronto</title>
+              <link rel="stylesheet" href="./assets/styles-BC36syyE.css">
+              <script type="module" src="./assets/index-DO6-uGQx.js"></script>
+              <script type="module" src="./assets/index-DD7J-GEE.js"></script>
+            </head>
+            <body>
+              <div id="root"></div>
+            </body>
+          </html>
+          EOF
+          
+          # 4. Save a duplicate to 404.html to secure route updates
+          cp final-deploy/index.html final-deploy/404.html
+          
+          # 5. Tell Jekyll to stay disabled
+          touch final-deploy/.nojekyll
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist/client
+          publish_dir: final-deploy
